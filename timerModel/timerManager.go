@@ -48,6 +48,11 @@ func (self *TimerManagerInstance) SetOwnerName (name string) {
 // 調用此function，
 // 該timer便會進入timerList，被manager服務
 func (self *TimerManagerInstance) RegisteTimer (t *Timer) {
+	
+	if t == nil {
+		panic("Insert a nil pointer of timer into RegisteTimer()");
+	}
+	
 	self.timerList.PushBack(t);
 	self.counter++;
 }

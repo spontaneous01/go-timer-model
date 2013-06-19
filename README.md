@@ -10,9 +10,9 @@ workes fine with Go 1.1
 
 ## Import
 
-`import "github.com/spontaneous01/go-timer-model" `  
+`import "github.com/spontaneous01/go-timer-model/timerModel" `  
 or use alias  
-`import timerModel "github.com/spontaneous01/go-timer-model"`  
+`import tm "github.com/spontaneous01/go-timer-model/timerModel"`  
 
 ## Usage
 
