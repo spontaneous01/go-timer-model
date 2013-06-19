@@ -34,7 +34,7 @@ func (self *Timer) IsCounting () (bool) {
 
 // 是否已經到達 timeout 標準
 func (self *Timer) IsTimeout () (bool) {
-	if cmf.GetTimeMillionSecond() - self.StartTime >= self.Interval {
+	if getTimeMillionSecond() - self.StartTime >= self.Interval {
 		return true
 	}
 	return false
